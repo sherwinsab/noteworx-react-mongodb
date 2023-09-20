@@ -1,12 +1,12 @@
 FROM node:8.17
 
-WORKDIR /Client/components/App
+WORKDIR /usr/src/app
 
 COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY . /usr/src/app
 
 EXPOSE 8000
 CMD [ "node", "index.js" ]
