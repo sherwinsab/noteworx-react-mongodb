@@ -1,6 +1,6 @@
-FROM NODE:8.17.0
+FROM node:8.17
 
-WORKDIR /usr/src/app
+WORKDIR /Client/components/App
 
 COPY package*.json ./
 
